@@ -1,6 +1,6 @@
 <?php
 
-use yii2lab\rest\web\helpers\RestModuleHelper;
+use yii2tool\restclient\web\helpers\RestModuleHelper;
 
 $config = [
 	'error' => 'yii2module\error\module\Module',
