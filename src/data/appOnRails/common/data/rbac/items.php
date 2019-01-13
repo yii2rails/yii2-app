@@ -14,6 +14,13 @@ return [
             'oLangManage',
             'oRbacManage',
             'oBackendAll',
+            'oLogreaderManage',
+            'oOfflineManage',
+            'oCleanerManage',
+            'oNotifyManage',
+            'oEncryptManage',
+            'oVendorManage',
+            'oGuideModify',
         ],
     ],
     'rUser' => [
@@ -72,5 +79,33 @@ return [
     'oBackendAll' => [
         'type' => 2,
         'description' => 'Доступ в админ панель',
+    ],
+    'oLogreaderManage' => [
+        'type' => 2,
+        'description' => 'Управление логами',
+    ],
+    'oOfflineManage' => [
+        'type' => 2,
+        'description' => 'Управление статусом оффлайн',
+    ],
+    'oCleanerManage' => [
+        'type' => 2,
+        'description' => 'Управление чистильщиком',
+    ],
+    'oNotifyManage' => [
+        'type' => 2,
+        'description' => 'Управление уведомлениями',
+    ],
+    'oEncryptManage' => [
+        'type' => 2,
+        'description' => 'Шифрование данных',
+    ],
+    'oVendorManage' => [
+        'type' => 2,
+        'description' => 'Управление композер-пакетами',
+    ],
+    'oGuideModify' => [
+        'type' => 2,
+        'description' => 'Редактирование руководства',
     ],
 ];

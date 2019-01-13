@@ -1,15 +1,24 @@
 <?php
 
 use yii2lab\app\domain\enums\YiiEnvEnum;
-use yii2lab\extension\common\helpers\StringHelper;
-use yii2lab\extension\enum\enums\TimeEnum;
 
-$domain = 'demo.yii';
+$url = [
+	'frontend' => 'http://demo.yii/',
+	'backend' => 'http://admin.demo.yii/',
+	'api' => 'http://api.demo.yii/',
+];
 
 $servers = [
 	'static' => [
-		'publicPath' => '@frontend/web/',
-		'domain' => 'http://' . $domain . '/',
+		//'publicPath' => '@frontend/web/',
+		/*'domain' => 'http://static.yii/',
+		'driver' => 'ftp',
+		'connection' => [
+			'host' => 'static.yii',
+			'username' => 'static',
+			'password' => '123456',
+		],*/
+		'domain' => $url['frontend'],
 		'driver' => 'local',
 		'connection' => [
 			'path' => '@frontend/web',
@@ -24,31 +33,13 @@ $servers = [
 	],*/
 	'db' => [
 		'main' => [
-			'driver' => 'mysql',
-			'host' => 'localhost',
-			'username' => 'root',
+			'driver' => 'pgsql',
+			'host' => '127.0.0.1',
+			'username' => 'postgres',
 			'password' => '',
 			'dbname' => 'demo_yii',
+			'defaultSchema' => 'public',
 		],
-	],
-];
-
-$jwtProfiles = [
-	'default' => [
-		'key' => StringHelper::generateRandomString(32),
-		'issuer_url' => 'http://api.' . $domain . '/v1/auth',
-		'life_time' => TimeEnum::SECOND_PER_MINUTE * 20,
-		'allowed_algs' => ['HS256', 'SHA512', 'HS384'],
-		'default_alg' => 'HS256',
-		'audience' => ['http://api.' . $domain],
-	],
-	'auth' => [
-		'key' => StringHelper::generateRandomString(32),
-		'issuer_url' => 'http://api.' . $domain . '/v1/auth',
-		'life_time' => TimeEnum::SECOND_PER_MINUTE * 20,
-		'allowed_algs' => ['HS256', 'SHA512', 'HS384'],
-		'default_alg' => 'HS256',
-		'audience' => ['http://api.' . $domain],
 	],
 ];
 
@@ -68,28 +59,21 @@ $config = [
 			'title' => 'Custom env config',
 			'segment' => null,
 			'value' => [
-				'url' => [
-					'frontend' => 'http://' . $domain . '/',
-					'backend' => 'http://admin.' . $domain . '/',
-					'api' => 'http://api.' . $domain . '/',
-				],
+				'url' => $url,
 				'servers' => $servers,
 				'mode' => [
 					'env' => YiiEnvEnum::DEV,
 					'debug' => true,
 				],
-				'jwt' => [
-					'profiles' => $jwtProfiles,
-				],
-				'authclient' => [
+				'jwt' => include(__DIR__ . '/../snipet/jwt.php'),
+				/*'authclient' => [
 					'profiles' => $authclientProfiles,
-				],
-			
+				],*/
 			],
 		],
 	],
 ];
 
-$commonConfig = include(realpath(__DIR__ . '/../snipet/commonFilters.php'));
-$config['filters'] = array_merge($config['filters'], $commonConfig);
+$filters = include(__DIR__ . '/../snipet/filters.php');
+$config['filters'] = array_merge($config['filters'], $filters);
 return $config;
