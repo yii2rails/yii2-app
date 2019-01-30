@@ -30,8 +30,7 @@
 		"yii2bundle/yii2-rbac": "dev-master",
 		"yii2bundle/yii2-rest": "dev-master",
 		"yii2bundle/yii2-summary": "dev-master",
-		"yii2bundle/yii2-ubuntu-font": "dev-master",
-		"2amigos/yii2-tinymce-widget": "~1.1"
+		"yii2bundle/yii2-ubuntu-font": "dev-master"
 	},
 	"require-dev": {
 		"yii2tool/yii2-test": "dev-master",
@@ -65,7 +64,7 @@
 			"type": "composer",
 			"url": "https://asset-packagist.org"
 		},
-		
+
 		{
 			"type": "git",
 			"url": "https://github.com/yii2rails/yii2-app.git"
@@ -78,7 +77,7 @@
 			"type": "git",
 			"url": "https://github.com/yii2rails/yii2-extension.git"
 		},
-		
+
 		{
 			"type": "git",
 			"url": "https://github.com/yii2tool/yii2-cleaner.git"
@@ -111,7 +110,7 @@
 			"type": "git",
 			"url": "https://github.com/yii2tool/yii2-restclient.git"
 		},
-		
+
 		{
 			"type": "git",
 			"url": "https://github.com/yii2team/guide-misc.git"
@@ -120,7 +119,7 @@
 			"type": "git",
 			"url": "https://github.com/yii2team/guide-team.git"
 		},
-		
+
 		{
 			"type": "git",
 			"url": "https://github.com/yii2bundle/yii2-account.git"

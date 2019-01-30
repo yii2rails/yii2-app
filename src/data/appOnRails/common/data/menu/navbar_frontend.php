@@ -2,7 +2,7 @@
 
 return [
 	'mainMenu' => [
-		'yii2lab\rest\web\helpers\Menu',
+		'yii2tool\restclient\web\helpers\Menu',
 	],
 	'rightMenu' => [
 		'yii2module\account\module\helpers\Menu',
