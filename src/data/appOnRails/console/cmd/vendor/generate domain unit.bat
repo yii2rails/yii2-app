@@ -1,4 +1,5 @@
 @echo off
 cd ../../..
-php yii vendor/generate-domain/all
+cd vendor/yii2tool/yii2-vendor/bin
+php bin generate-domain/all
 pause

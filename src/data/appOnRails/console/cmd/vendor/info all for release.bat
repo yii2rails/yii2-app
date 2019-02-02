@@ -1,4 +1,5 @@
 @echo off
 cd ../../..
-php yii vendor/info/all-for-release
+cd vendor/yii2tool/yii2-vendor/bin
+php bin info/all-for-release
 pause

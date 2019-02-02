@@ -1,4 +1,5 @@
 @echo off
 cd ../../..
-php yii vendor/pretty/domain
+cd vendor/yii2tool/yii2-vendor/bin
+php bin pretty/domain
 pause

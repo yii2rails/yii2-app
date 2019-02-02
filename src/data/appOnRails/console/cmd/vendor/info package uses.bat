@@ -1,4 +1,5 @@
 @echo off
 cd ../../..
-php yii vendor/info/package-uses
+cd vendor/yii2tool/yii2-vendor/bin
+php bin info/package-uses
 pause
