@@ -1,8 +1,8 @@
 <?php
 
 return [
-	'rails template' => [
-		'sourceDir' => 'vendor/yii2rails/yii2-app/src/data/nativeAppOnRails',
+	'yii2 rails' => [
+		'sourceDir' => 'vendor/yii2rails/yii2-app/src/data/rails',
 		'forCopy' => [
 			'backend' => [
 				'backend',
@@ -26,8 +26,8 @@ return [
 			],
 		],
 	],
-	'yii template' => [
-		'sourceDir' => 'vendor/yii2rails/yii2-app/src/data/appOnRails',
+	'yii2 native' => [
+		'sourceDir' => 'vendor/yii2rails/yii2-app/src/data/native',
 		'forCopy' => [
 			'api' => [
 				'api',

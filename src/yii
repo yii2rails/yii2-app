@@ -8,69 +8,9 @@ use yii2mod\helpers\ArrayHelper;
 @include_once('App.php');
 App::init('console');
 
-$domainAlias = Select::display('Select domain', [
-    'native',
-    'clean',
-]);
+$config = require_once(__DIR__ . '/data/config.php');
+$domainAlias = Select::display('Select domain', array_keys($config));
 $domainAlias = ArrayHelper::first($domainAlias);
-
-if($domainAlias == 'native') {
-	$sourceDir = 'vendor/yii2rails/yii2-app/src/data/nativeAppOnRails';
-	$forCopy = [
-		'backend' => [
-			'backend',
-			'environments/files/backend',
-			'common',
-			'environments/files/common',
-		],
-		'frontend' => [
-			'frontend',
-			'environments/files/frontend',
-			'common',
-			'environments/files/common',
-		],
-		'console' => [
-			'cmd',
-			'console',
-			'environments/files/console',
-		],
-		'phpStorm' => [
-			'.idea',
-		],
-	];
-}
-if($domainAlias == 'clean') {
-	$sourceDir = 'vendor/yii2rails/yii2-app/src/data/appOnRails';
-	$forCopy = [
-		'api' => [
-			'api',
-			'environments/files/api',
-			'common',
-			'environments/files/common',
-		],
-		'backend' => [
-			'backend',
-			'environments/files/backend',
-			'common',
-			'environments/files/common',
-		],
-		'frontend' => [
-			'frontend',
-			'environments/files/frontend',
-			'common',
-			'environments/files/common',
-		],
-		'console' => [
-			'cmd',
-			'console',
-			'environments/files/console',
-		],
-		'phpStorm' => [
-			'.idea',
-		],
-	];
-}
-
-Generator::generateApplication($sourceDir, $forCopy);
-
+$aliasConfig = $config[$domainAlias];
+Generator::generateApplication($aliasConfig['sourceDir'], $aliasConfig['forCopy']);
 \yii2lab\extension\console\helpers\Alert::success('Template success generated!');
