@@ -14,6 +14,7 @@
 		"yii2tool/yii2-cleaner": "dev-master",
 		"yii2tool/yii2-offline": "dev-master",
 		"yii2tool/yii2-init": "dev-master",
+
 		"yii2bundle/yii2-account": "dev-master",
 		"yii2bundle/yii2-application-template": "dev-master",
 		"yii2bundle/yii2-article": "dev-master",
@@ -40,8 +41,10 @@
 		"yii2tool/yii2-restclient": "dev-master",
 		"yii2team/guide-misc": "dev-master",
 		"yii2team/guide-team": "dev-master",
+	
 		"yii2guide/markdown": "dev-master",
 		"yii2guide/perfect-code": "dev-master"
+
 	},
 	"config": {
 		"secure-http": false,
@@ -64,7 +67,7 @@
 			"type": "composer",
 			"url": "https://asset-packagist.org"
 		},
-
+		
 		{
 			"type": "git",
 			"url": "https://github.com/yii2rails/yii2-app.git"
@@ -77,7 +80,7 @@
 			"type": "git",
 			"url": "https://github.com/yii2rails/yii2-extension.git"
 		},
-
+		
 		{
 			"type": "git",
 			"url": "https://github.com/yii2tool/yii2-cleaner.git"
@@ -106,6 +109,7 @@
 			"type": "git",
 			"url": "https://github.com/yii2tool/yii2-vendor.git"
 		},
+		
 		{
 			"type": "git",
 			"url": "https://github.com/yii2tool/yii2-restclient.git"
@@ -119,10 +123,14 @@
 			"type": "git",
 			"url": "https://github.com/yii2team/guide-team.git"
 		},
-
+		
 		{
 			"type": "git",
 			"url": "https://github.com/yii2bundle/yii2-account.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/yii2bundle/yii2-ai.git"
 		},
 		{
 			"type": "git",
@@ -162,6 +170,10 @@
 		},
 		{
 			"type": "git",
+			"url": "https://github.com/yii2bundle/yii2-markdown.git"
+		},
+		{
+			"type": "git",
 			"url": "https://github.com/yii2bundle/yii2-navigation.git"
 		},
 		{
@@ -191,6 +203,18 @@
 		{
 			"type": "git",
 			"url": "https://github.com/yii2bundle/yii2-ubuntu-font.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/yii2bundle/yii2-validator.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/yii2game/yii2-engine.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/yii2game/yii2-evo.git"
 		}
 	]
 }
