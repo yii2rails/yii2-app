@@ -4,6 +4,16 @@ return [
 	'yii2 rails' => [
 		'sourceDir' => 'vendor/yii2rails/yii2-app/src/data/rails',
 		'forCopy' => [
+			'common' => [
+				'common',
+				'environments/files/common',
+			],
+			'api' => [
+				'api',
+				'environments/files/api',
+				'common',
+				'environments/files/common',
+			],
 			'backend' => [
 				'backend',
 				'environments/files/backend',
@@ -29,12 +39,6 @@ return [
 	'yii2 native' => [
 		'sourceDir' => 'vendor/yii2rails/yii2-app/src/data/native',
 		'forCopy' => [
-			'api' => [
-				'api',
-				'environments/files/api',
-				'common',
-				'environments/files/common',
-			],
 			'backend' => [
 				'backend',
 				'environments/files/backend',
