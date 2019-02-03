@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2lab\app\domain\repositories\disc;
+namespace yii2rails\app\domain\repositories\disc;
 
-use yii2lab\domain\BaseEntity;
+use yii2rails\domain\BaseEntity;
 
 class ModeRepository extends BaseConfigRepository {
 

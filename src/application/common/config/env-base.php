@@ -1,6 +1,6 @@
 <?php
 
-use yii2lab\app\domain\commands\RunBootstrap;
+use yii2rails\app\domain\commands\RunBootstrap;
 
 return [
     'app' => [
@@ -17,7 +17,7 @@ return [
     ],
     'config' => [
         'filters' => [
-            'yii2lab\app\domain\filters\config\NativeYiiTemplateConfig',
+            'yii2rails\app\domain\filters\config\NativeYiiTemplateConfig',
         ],
     ],
 ];

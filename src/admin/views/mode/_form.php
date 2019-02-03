@@ -6,8 +6,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use yii2lab\app\domain\entities\ModeEntity;
-use yii2lab\extension\widget\SwitchInput;
+use yii2rails\app\domain\entities\ModeEntity;
+use yii2rails\extension\widget\SwitchInput;
 
 ?>
 

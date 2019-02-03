@@ -1,18 +1,18 @@
 <?php
 
-namespace yii2lab\app\admin\controllers;
+namespace yii2rails\app\admin\controllers;
 
 use Yii;
-use yii2lab\domain\web\ActiveController;
+use yii2rails\domain\web\ActiveController;
 
 class ConnectionController extends ActiveController
 {
 
-	const ACTION_UPDATE = 'yii2lab\app\admin\actions\UpdateAction';
+	const ACTION_UPDATE = 'yii2rails\app\admin\actions\UpdateAction';
 
 	public $defaultAction = 'main';
 	public $service = 'app.connection';
-	public $formClass = 'yii2lab\app\admin\forms\ConnectionForm';
+	public $formClass = 'yii2rails\app\admin\forms\ConnectionForm';
 
 	public function actions() {
 		return [

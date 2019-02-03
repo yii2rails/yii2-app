@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\app\domain\helpers;
+namespace yii2rails\app\domain\helpers;
 
 use Yii;
-use yii2lab\app\domain\enums\YiiEnvEnum;
+use yii2rails\app\domain\enums\YiiEnvEnum;
 
 class Constant {
 	

@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2lab\app\domain\services;
+namespace yii2rails\app\domain\services;
 
-use yii2lab\domain\services\base\BaseService;
+use yii2rails\domain\services\base\BaseService;
 
 class BaseConfigService extends BaseService {
 

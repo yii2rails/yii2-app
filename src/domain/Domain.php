@@ -1,21 +1,21 @@
 <?php
 
-namespace yii2lab\app\domain;
+namespace yii2rails\app\domain;
 
-use yii2lab\domain\enums\Driver;
+use yii2rails\domain\enums\Driver;
 
 /**
  * Class Domain
  *
- * @package yii2lab\app\domain
+ * @package yii2rails\app\domain
  *
- * @property \yii2lab\app\domain\services\ModeService $mode
- * @property \yii2lab\app\domain\services\UrlService $url
- * @property \yii2lab\app\domain\services\RemoteService $remote
- * @property \yii2lab\app\domain\services\ConnectionService $connection
- * @property \yii2lab\app\domain\services\CookieService $cookie
+ * @property \yii2rails\app\domain\services\ModeService $mode
+ * @property \yii2rails\app\domain\services\UrlService $url
+ * @property \yii2rails\app\domain\services\RemoteService $remote
+ * @property \yii2rails\app\domain\services\ConnectionService $connection
+ * @property \yii2rails\app\domain\services\CookieService $cookie
  */
-class Domain extends \yii2lab\domain\Domain {
+class Domain extends \yii2rails\domain\Domain {
 	
 	public function config() {
 		return [

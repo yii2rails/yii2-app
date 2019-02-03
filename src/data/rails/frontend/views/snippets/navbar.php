@@ -6,8 +6,8 @@
 
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
-use yii2lab\app\domain\helpers\EnvService;
-use yii2lab\extension\menu\helpers\MenuHelper;
+use yii2rails\app\domain\helpers\EnvService;
+use yii2rails\extension\menu\helpers\MenuHelper;
 
 $isFixedTop = !empty($isFixedTop);
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php
 
-use yii2lab\app\domain\helpers\generator\Generator;
-use yii2lab\extension\console\helpers\input\Select;
+use yii2rails\app\domain\helpers\generator\Generator;
+use yii2rails\extension\console\helpers\input\Select;
 use yii2mod\helpers\ArrayHelper;
 
 @include_once('App.php');
@@ -13,4 +13,4 @@ $domainAlias = Select::display('Select domain', array_keys($config));
 $domainAlias = ArrayHelper::first($domainAlias);
 $aliasConfig = $config[$domainAlias];
 Generator::generateApplication($aliasConfig['sourceDir'], $aliasConfig['forCopy']);
-\yii2lab\extension\console\helpers\Alert::success('Template success generated!');
+\yii2rails\extension\console\helpers\Alert::success('Template success generated!');

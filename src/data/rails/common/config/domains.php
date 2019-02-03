@@ -7,6 +7,6 @@ return [
 	'vendor' => 'yii2module\vendor\domain\Domain',
 	'navigation' => 'yii2lab\navigation\domain\Domain',
 	'notify' => 'yii2lab\notify\domain\Domain',
-	'jwt' => 'yii2lab\extension\jwt\Domain',
+	'jwt' => 'yii2rails\extension\jwt\Domain',
 	'guide' => 'yii2module\guide\domain\Domain',
 ];

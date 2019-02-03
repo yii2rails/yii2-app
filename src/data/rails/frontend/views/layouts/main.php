@@ -3,7 +3,7 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use yii2lab\extension\web\helpers\Page;
+use yii2rails\extension\web\helpers\Page;
 use yii2lab\navigation\domain\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use yii2lab\navigation\domain\widgets\Alert;

@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\app\domain\services;
+namespace yii2rails\app\domain\services;
 
 class UrlService extends BaseConfigService {
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\app\admin\helpers;
+namespace yii2rails\app\admin\helpers;
 
-use yii2lab\app\domain\enums\AppPermissionEnum;
-use yii2lab\extension\menu\interfaces\MenuInterface;
+use yii2rails\app\domain\enums\AppPermissionEnum;
+use yii2rails\extension\menu\interfaces\MenuInterface;
 
 class Menu implements MenuInterface {
 	

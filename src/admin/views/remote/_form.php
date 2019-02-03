@@ -6,7 +6,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use yii2lab\app\domain\entities\RemoteEntity;
+use yii2rails\app\domain\entities\RemoteEntity;
 
 ?>
 

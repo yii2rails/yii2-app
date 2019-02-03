@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2lab\app\domain\entities;
+namespace yii2rails\app\domain\entities;
 
-use yii2lab\domain\BaseEntity;
+use yii2rails\domain\BaseEntity;
 
 class UrlEntity extends BaseEntity {
 

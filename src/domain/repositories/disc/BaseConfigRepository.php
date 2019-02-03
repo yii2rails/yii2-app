@@ -1,10 +1,10 @@
 <?php
 
-namespace yii2lab\app\domain\repositories\disc;
+namespace yii2rails\app\domain\repositories\disc;
 
-use yii2lab\domain\BaseEntity;
-use yii2lab\domain\repositories\BaseRepository as YiiBaseRepository;
-use yii2lab\extension\store\Store;
+use yii2rails\domain\BaseEntity;
+use yii2rails\domain\repositories\BaseRepository as YiiBaseRepository;
+use yii2rails\extension\store\Store;
 
 class BaseConfigRepository extends YiiBaseRepository {
 

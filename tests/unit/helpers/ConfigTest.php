@@ -4,8 +4,8 @@ namespace tests\unit\helpers;
 
 use yii2lab\test\Test\Unit;
 use yii\helpers\ArrayHelper;
-use yii2lab\app\domain\helpers\Config;
-use yii2lab\app\domain\helpers\Env;
+use yii2rails\app\domain\helpers\Config;
+use yii2rails\app\domain\helpers\Env;
 use yii2lab\test\helpers\DataHelper;
 
 class ConfigTest extends Unit

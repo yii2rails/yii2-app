@@ -1,10 +1,10 @@
 <?php
 
-namespace yii2lab\app\domain\filters\env;
+namespace yii2rails\app\domain\filters\env;
 
-use yii2lab\extension\scenario\base\BaseScenario;
-use yii2lab\extension\yii\helpers\ArrayHelper;
-use yii2lab\app\domain\enums\YiiEnvEnum;
+use yii2rails\extension\scenario\base\BaseScenario;
+use yii2rails\extension\yii\helpers\ArrayHelper;
+use yii2rails\app\domain\enums\YiiEnvEnum;
 
 class YiiEnv extends BaseScenario {
 	

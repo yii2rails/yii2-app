@@ -37,9 +37,9 @@
 Пример конфига `common/config/env.php`:
 
 ```php
-use yii2lab\app\domain\filters\config\LoadConfig;
-use yii2lab\app\domain\filters\config\LoadModuleConfig;
-use yii2lab\domain\filters\LoadDomainConfig;
+use yii2rails\app\domain\filters\config\LoadConfig;
+use yii2rails\app\domain\filters\config\LoadModuleConfig;
+use yii2rails\domain\filters\LoadDomainConfig;
 
 return [
 	'config' => [
@@ -128,7 +128,7 @@ return [
 				'name' => 'install',
 				'withLocal' => false,
 			],
-			'yii2lab\app\domain\filters\config\StandardConfigMutations',
+			'yii2rails\app\domain\filters\config\StandardConfigMutations',
 			'yii2module\offline\domain\filters\IsOffline',
 			
 			[
@@ -227,7 +227,7 @@ return [
 Рассмотрим фильтр загрузки конфига:
 
 ```php
-use yii2lab\app\domain\filters\config\LoadConfig;
+use yii2rails\app\domain\filters\config\LoadConfig;
 
 return [
 	

@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2lab\app\domain\helpers;
+namespace yii2rails\app\domain\helpers;
 
-use yii2lab\extension\store\StoreFile;
+use yii2rails\extension\store\StoreFile;
 
 class CacheHelper {
 

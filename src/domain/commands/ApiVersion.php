@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2lab\app\domain\commands;
+namespace yii2rails\app\domain\commands;
 
-use yii2lab\extension\scenario\base\BaseScenario;
+use yii2rails\extension\scenario\base\BaseScenario;
 use yii2lab\rest\domain\helpers\MiscHelper;
 
 class ApiVersion extends BaseScenario {

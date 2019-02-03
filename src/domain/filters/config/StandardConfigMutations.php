@@ -1,16 +1,16 @@
 <?php
 
-namespace yii2lab\app\domain\filters\config;
+namespace yii2rails\app\domain\filters\config;
 
-use yii2lab\extension\scenario\base\BaseGroupScenario;
+use yii2rails\extension\scenario\base\BaseGroupScenario;
 
 class StandardConfigMutations extends BaseGroupScenario {
 
     public $filters = [
-        'yii2lab\app\domain\filters\config\SetControllerNamespace',
-        'yii2lab\app\domain\filters\config\FixValidationKeyInTest',
-        'yii2lab\app\domain\filters\config\SetAppId',
-        'yii2lab\app\domain\filters\config\SetPath',
+        'yii2rails\app\domain\filters\config\SetControllerNamespace',
+        'yii2rails\app\domain\filters\config\FixValidationKeyInTest',
+        'yii2rails\app\domain\filters\config\SetAppId',
+        'yii2rails\app\domain\filters\config\SetPath',
     ];
 
 }

@@ -1,7 +1,7 @@
 <?php
 
 use yii2lab\applicationTemplate\common\enums\ApplicationPermissionEnum;
-use yii2lab\extension\web\helpers\Behavior;
+use yii2rails\extension\web\helpers\Behavior;
 
 return [
 	'lang' => [

@@ -1,13 +1,13 @@
 <?php
 
-namespace yii2lab\app\domain\filters\env;
+namespace yii2rails\app\domain\filters\env;
 
-use yii2lab\extension\scenario\base\BaseScenario;
+use yii2rails\extension\scenario\base\BaseScenario;
 
 /**
  * Class NormalizeDbConfig
  *
- * @package yii2lab\app\domain\filters\env
+ * @package yii2rails\app\domain\filters\env
  *
  * @deprecated
  */

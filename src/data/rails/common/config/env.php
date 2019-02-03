@@ -1,12 +1,12 @@
 <?php
 
-use yii2lab\app\domain\commands\ApiVersion;
-use yii2lab\app\domain\commands\RunBootstrap;
-use yii2lab\app\domain\filters\config\LoadConfig;
-use yii2lab\app\domain\filters\config\LoadModuleConfig;
-use yii2lab\app\domain\filters\config\LoadRouteConfig;
-use yii2lab\domain\filters\LoadDomainConfig;
-use yii2lab\app\domain\enums\YiiEnvEnum;
+use yii2rails\app\domain\commands\ApiVersion;
+use yii2rails\app\domain\commands\RunBootstrap;
+use yii2rails\app\domain\filters\config\LoadConfig;
+use yii2rails\app\domain\filters\config\LoadModuleConfig;
+use yii2rails\app\domain\filters\config\LoadRouteConfig;
+use yii2rails\domain\filters\LoadDomainConfig;
+use yii2rails\app\domain\enums\YiiEnvEnum;
 
 return [
 	'api' => [
@@ -47,7 +47,7 @@ return [
 				'isEnabled' => APP == API,
 			],
             [
-                'class' => 'yii2lab\domain\filters\DefineDomainLocator',
+                'class' => 'yii2rails\domain\filters\DefineDomainLocator',
                 'filters' => [
                     [
                         'class' => LoadDomainConfig::class,
@@ -160,8 +160,8 @@ return [
 				],
 			],
 			
-			'yii2lab\app\domain\filters\config\StandardConfigMutations',
-			'yii2lab\app\domain\filters\config\DebugModule',
+			'yii2rails\app\domain\filters\config\StandardConfigMutations',
+			'yii2rails\app\domain\filters\config\DebugModule',
 		],
 	],
 ];

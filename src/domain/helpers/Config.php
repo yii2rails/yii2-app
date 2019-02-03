@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\app\domain\helpers;
+namespace yii2rails\app\domain\helpers;
 
-use yii2lab\extension\registry\base\BaseRegistry;
-use yii2lab\extension\common\helpers\ClassHelper;
+use yii2rails\extension\registry\base\BaseRegistry;
+use yii2rails\extension\common\helpers\ClassHelper;
 
 class Config extends BaseRegistry {
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace yii2lab\app\admin\actions;
+namespace yii2rails\app\admin\actions;
 
-use yii2lab\domain\exceptions\UnprocessableEntityHttpException;
+use yii2rails\domain\exceptions\UnprocessableEntityHttpException;
 use yii2lab\navigation\domain\widgets\Alert;
 use Yii;
-use yii2lab\domain\base\Action;
+use yii2rails\domain\base\Action;
 
 class UpdateAction extends Action {
 	

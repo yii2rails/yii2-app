@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2lab\app\domain\helpers;
+namespace yii2rails\app\domain\helpers;
 
-use yii2lab\extension\common\helpers\UrlHelper;
+use yii2rails\extension\common\helpers\UrlHelper;
 
 class EnvService {
 

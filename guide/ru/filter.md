@@ -3,7 +3,7 @@
 
 ## Основное
 
-У всех, представленных ниже фильтров неймспейс такой: `yii2lab\app\domain\filters\config\*`.
+У всех, представленных ниже фильтров неймспейс такой: `yii2rails\app\domain\filters\config\*`.
 
 ## Фильтры
 
@@ -25,11 +25,11 @@
 
 загрузчик конфига модулей
 
-Основан на фильтре `yii2lab\app\domain\filters\config\LoadConfig`.
+Основан на фильтре `yii2rails\app\domain\filters\config\LoadConfig`.
 
 Параметры:
 
-Те же, что у [LoadConfig](#yii2lab\app\domain\filters\config\loadconfig)
+Те же, что у [LoadConfig](#yii2rails\app\domain\filters\config\loadconfig)
 
 ### SetControllerNamespace
 
@@ -74,7 +74,7 @@ return [
 return [
 	'' => 'welcome',
 	[
-		'class' => 'yii2lab\app\domain\filters\config\LoadRouteConfig',
+		'class' => 'yii2rails\app\domain\filters\config\LoadRouteConfig',
 		'modules' => [
 			'frontend/modules/guide',
 		],

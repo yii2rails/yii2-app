@@ -1,10 +1,10 @@
 <?php
 
-namespace yii2lab\app\domain\helpers;
+namespace yii2rails\app\domain\helpers;
 
 use yii\helpers\ArrayHelper;
-use yii2lab\extension\registry\base\BaseRegistry;
-use yii2lab\extension\yii\helpers\FileHelper;
+use yii2rails\extension\registry\base\BaseRegistry;
+use yii2rails\extension\yii\helpers\FileHelper;
 
 class Env extends BaseRegistry {
 
@@ -29,10 +29,10 @@ class Env extends BaseRegistry {
 			'commands' => [],
 			'filters' => [
 				[
-					'class' => 'yii2lab\app\domain\filters\env\LoadConfig',
+					'class' => 'yii2rails\app\domain\filters\env\LoadConfig',
 					'paths' => $paths,
 				],
-				'yii2lab\app\domain\filters\env\YiiEnv',
+				'yii2rails\app\domain\filters\env\YiiEnv',
 			],
 		];
 		return $definition;

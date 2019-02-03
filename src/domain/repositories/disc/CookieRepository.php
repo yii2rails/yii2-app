@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\app\domain\repositories\disc;
+namespace yii2rails\app\domain\repositories\disc;
 
 use Yii;
 

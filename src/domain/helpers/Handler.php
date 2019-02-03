@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\app\domain\helpers;
+namespace yii2rails\app\domain\helpers;
 
-use yii2lab\extension\scenario\collections\ScenarioCollection;
-use yii2lab\extension\scenario\helpers\ScenarioHelper;
+use yii2rails\extension\scenario\collections\ScenarioCollection;
+use yii2rails\extension\scenario\helpers\ScenarioHelper;
 
 class Handler {
 	
@@ -13,7 +13,7 @@ class Handler {
 	/**
 	 * @param array $data
 	 *
-	 * @return array|\yii2lab\domain\values\BaseValue
+	 * @return array|\yii2rails\domain\values\BaseValue
 	 * @throws \yii\base\InvalidConfigException
 	 * @throws \yii\web\ServerErrorHttpException
 	 */

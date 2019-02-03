@@ -1,11 +1,11 @@
 <?php
 
-namespace yii2lab\app\domain\helpers\generator;
+namespace yii2rails\app\domain\helpers\generator;
 
 use yii\helpers\ArrayHelper;
-use yii2lab\extension\console\helpers\CopyFiles;
-use yii2lab\extension\console\helpers\input\Select;
-use yii2lab\extension\console\helpers\Output;
+use yii2rails\extension\console\helpers\CopyFiles;
+use yii2rails\extension\console\helpers\input\Select;
+use yii2rails\extension\console\helpers\Output;
 
 class Generator {
 	

@@ -47,7 +47,7 @@ return [
 		],
 		'db' => 'yii2lab\db\domain\db\Connection',
 		'queue' => [
-			'class' => 'yii2lab\extension\queue\drivers\file\Queue',
+			'class' => 'yii2rails\extension\queue\drivers\file\Queue',
 			'path' => '@common/runtime/queue',
 			'autoRun' => !YII_ENV_PROD,
 		],

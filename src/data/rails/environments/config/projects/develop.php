@@ -1,6 +1,6 @@
 <?php
 
-use yii2lab\app\domain\enums\YiiEnvEnum;
+use yii2rails\app\domain\enums\YiiEnvEnum;
 
 $url = [
 	'frontend' => 'http://demo.yii/',

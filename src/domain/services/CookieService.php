@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\app\domain\services;
+namespace yii2rails\app\domain\services;
 
-use yii2lab\domain\exceptions\UnprocessableEntityHttpException;
-use yii2lab\domain\helpers\ErrorCollection;
+use yii2rails\domain\exceptions\UnprocessableEntityHttpException;
+use yii2rails\domain\helpers\ErrorCollection;
 
 class CookieService extends BaseConfigService {
 

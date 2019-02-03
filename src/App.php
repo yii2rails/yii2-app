@@ -1,17 +1,17 @@
 <?php
 
 use common\locators\DomainLocator;
-use yii2lab\domain\base\BaseDomainLocator;
+use yii2rails\domain\base\BaseDomainLocator;
 use yii\base\InvalidConfigException;
 use yii\console\Application as ConsoleApplication;
 use yii\web\Application as WebApplication;
 use yii\web\ServerErrorHttpException;
-use yii2lab\app\domain\helpers\Env;
-use yii2lab\app\domain\helpers\Constant;
-use yii2lab\app\domain\helpers\Config;
-use yii2lab\app\domain\helpers\Load;
-use yii2lab\extension\develop\helpers\Benchmark;
-use yii2lab\extension\scenario\helpers\ScenarioHelper;
+use yii2rails\app\domain\helpers\Env;
+use yii2rails\app\domain\helpers\Constant;
+use yii2rails\app\domain\helpers\Config;
+use yii2rails\app\domain\helpers\Load;
+use yii2rails\extension\develop\helpers\Benchmark;
+use yii2rails\extension\scenario\helpers\ScenarioHelper;
 
 class App
 {
@@ -81,7 +81,7 @@ class App
 	private static function runCommands($commands)
 	{
 		try {
-			$filterCollection = new \yii2lab\extension\scenario\collections\ScenarioCollection($commands);
+			$filterCollection = new \yii2rails\extension\scenario\collections\ScenarioCollection($commands);
 			$filterCollection->runAll();
 		} catch(InvalidConfigException $e) {
 		} catch(ServerErrorHttpException $e) {

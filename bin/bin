@@ -7,7 +7,7 @@ $path = '../../../..';
 
 /* ------------------------------------------------------ */
 
-use yii2lab\extension\console\helpers\BinConsoleHelper;
+use yii2rails\extension\console\helpers\BinConsoleHelper;
 
 $controllerNamespace = 'yii2lab\\app\\console\\bin';
 $console = new BinConsoleHelper($controllerNamespace);

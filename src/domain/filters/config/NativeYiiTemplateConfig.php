@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\app\domain\filters\config;
+namespace yii2rails\app\domain\filters\config;
 
-use yii2lab\app\domain\enums\YiiEnvEnum;
-use yii2lab\extension\scenario\base\BaseGroupScenario;
+use yii2rails\app\domain\enums\YiiEnvEnum;
+use yii2rails\extension\scenario\base\BaseGroupScenario;
 
 class NativeYiiTemplateConfig extends BaseGroupScenario {
 

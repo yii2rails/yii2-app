@@ -1,10 +1,10 @@
 <?php
 
-namespace yii2lab\app\domain\entities;
+namespace yii2rails\app\domain\entities;
 
 use Yii;
-use yii2lab\app\domain\validators\ConnectionValidator;
-use yii2lab\domain\BaseEntity;
+use yii2rails\app\domain\validators\ConnectionValidator;
+use yii2rails\domain\BaseEntity;
 use yii2lab\db\domain\enums\DbDriverEnum;
 
 class ConnectionEntity extends BaseEntity {

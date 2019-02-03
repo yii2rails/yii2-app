@@ -1,7 +1,7 @@
 <?php
 
-use yii2lab\extension\common\helpers\StringHelper;
-use yii2lab\extension\enum\enums\TimeEnum;
+use yii2rails\extension\common\helpers\StringHelper;
+use yii2rails\extension\enum\enums\TimeEnum;
 
 return [
 	'profiles' => [

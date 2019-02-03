@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\app\admin\forms;
+namespace yii2rails\app\admin\forms;
 
 use Yii;
-use yii2lab\domain\base\Model;
+use yii2rails\domain\base\Model;
 
 class RemoteForm extends Model {
 

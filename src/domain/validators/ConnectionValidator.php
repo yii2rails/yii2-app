@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\app\domain\validators;
+namespace yii2rails\app\domain\validators;
 
 use yii\db\ActiveRecord;
 use yii\validators\Validator;
