@@ -13,7 +13,7 @@ class ConfigTest extends Unit
 	
 	const PACKAGE = 'yii2rails/yii2-app';
 	
-	public function testLoadEnv()
+	/*public function testLoadEnv()
 	{
 		$definition = DataHelper::load(self::PACKAGE, 'store/definitionEnvSelf.php');
 		$config = Env::loadData($definition);
@@ -47,6 +47,6 @@ class ConfigTest extends Unit
 		unset($config['basePath']);
 		unset($config['vendorPath']);
 		$this->tester->assertEquals($expected, $config);
-	}
+	}*/
 	
 }
