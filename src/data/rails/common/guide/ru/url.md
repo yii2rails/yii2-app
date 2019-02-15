@@ -32,7 +32,7 @@
 <tr>
     <td>API документация</td>
     <td><a href="http://test-api.yunews.kz/v1/doc/html">test-api.yunews.kz/v1/doc/html</a></td>
-    <td><a href="http://api.yunews.kz/v1/doc/html">api.yunews.kz/v1/doc/html</a></td>
+    <td>-</td>
  </tr>
 
 </tbody>
