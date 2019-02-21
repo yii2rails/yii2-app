@@ -17,6 +17,10 @@ function param($name, $default = null) {
 	return Env::get('params' . DOT . $name, $default);
 }
 
+function d($val) {
+    Debug::prr($val, 1, 1);
+}
+
 function prr($val, $exit = false, $forceToArray = false) {
 	Debug::prr($val, $exit, $forceToArray);
 }
