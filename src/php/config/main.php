@@ -2,7 +2,7 @@
 
 return [
     'id'                  => 'yii2-php',
-    'basePath'            => __DIR__,
+    'basePath'            => realpath(__DIR__ . '/../../../../../..'),
     'enableCoreCommands'  => false,
     'controllerNamespace' => 'yii\\apidoc\\commands',
     'components' => [
