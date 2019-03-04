@@ -68,7 +68,26 @@ class App
 		
 		self::$initedAs = $appName;
 	}
-	
+
+	public static function initPhpApplication($appName = 'default', $config = null) {
+	    self::init($appName);
+        if(empty($config)) {
+            $config = include(__DIR__ . '/../../../../vendor/yii2rails/yii2-app/src/php/config/main.php');
+        }
+        Yii::$app = self::getYiiApplication($config);
+        Yii::$app->init();
+    }
+
+    private static function getYiiApplication($config = null)
+    {
+        if (APP == CONSOLE) {
+            $application = new ConsoleApplication($config);
+        } else {
+            $application = new WebApplication($config);
+        }
+        return $application;
+    }
+
 	private static function initConfig() {
 		Benchmark::begin('init_config');
 		$definition = Env::get('config');
@@ -90,12 +109,11 @@ class App
 	
 	private static function runApplication($config)
 	{
+        $application = self::getYiiApplication($config);
 		if (APP == CONSOLE) {
-			$application = new ConsoleApplication($config);
 			$exitCode = $application->run();
 			exit($exitCode);
 		} else {
-			$application = new WebApplication($config);
 			$application->run();
 		}
 	}
