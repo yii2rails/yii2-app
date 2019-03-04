@@ -1,9 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-$path = '../../../..';
-
-@include_once(__DIR__ . '/' . $path . '/vendor/yii2rails/yii2-extension/src/console/helpers/binAppEndpoint.php');
+@include_once(__DIR__ . '/../../../../vendor/yii2rails/yii2-extension/src/console/helpers/binAppEndpoint.php');
 
 /* ------------------------------------------------------ */
 
