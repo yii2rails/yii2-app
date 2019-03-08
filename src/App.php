@@ -29,7 +29,14 @@ class App
 			self::init($appName, $projectDir);
 		}
 		$config = self::initConfig();
-		self::runApplication($config);
+		try {
+            self::runApplication($config);
+        } catch (Error $e) {
+            $message =
+                'Domain locator not defined! ' . PHP_EOL .
+                'Guide - https://github.com/yii2rails/yii2-domain/blob/master/guide/ru/exception-domain-locator-not-defined.md';
+            throw new InvalidConfigException($message, 0, $e);
+        }
 	}
 	
 	public static function init($appName, $projectDir = '')
