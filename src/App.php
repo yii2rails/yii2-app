@@ -32,10 +32,14 @@ class App
 		try {
             self::runApplication($config);
         } catch (Error $e) {
-            $message =
-                'Domain locator not defined! ' . PHP_EOL .
-                'Guide - https://github.com/yii2rails/yii2-domain/blob/master/guide/ru/exception-domain-locator-not-defined.md';
-            throw new InvalidConfigException($message, 0, $e);
+		    if($e->getMessage() == 'Call to a member function has() on null') {
+                $message =
+                    'Domain locator not defined! ' . PHP_EOL .
+                    'Guide - https://github.com/yii2rails/yii2-domain/blob/master/guide/ru/exception-domain-locator-not-defined.md';
+                throw new InvalidConfigException($message, 0, $e);
+            } else {
+                throw $e;
+            }
         }
 	}
 	
