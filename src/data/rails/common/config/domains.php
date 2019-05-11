@@ -1,7 +1,7 @@
 <?php
 
 return [
-	'account' => 'yii2module\account\domain\v2\Domain',
+	'account' => 'yii2module\account\domain\v3\Domain',
     'lang' => 'yii2module\lang\domain\Domain',
 	'rbac' => 'yii2lab\rbac\domain\Domain',
 	'vendor' => 'yii2module\vendor\domain\Domain',
