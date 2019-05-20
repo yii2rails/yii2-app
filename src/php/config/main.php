@@ -8,7 +8,7 @@ return [
     'components' => [
         'language' => 'yii2module\lang\domain\components\Language',
         'user' => [
-            'class' => 'yii2module\account\domain\v2\web\User',
+            'class' => 'yii2module\account\domain\v3\web\User',
         ],
         'authManager' => 'yii2lab\rbac\domain\rbac\PhpManager',
         'cache' => [

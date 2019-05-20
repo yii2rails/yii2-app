@@ -1,6 +1,6 @@
 <?php
 
-use yii2module\account\domain\v2\helpers\UserFixture;
+use yii2module\account\domain\v3\helpers\UserFixture;
 
 return [
 	[
