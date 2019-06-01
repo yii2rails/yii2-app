@@ -12,6 +12,7 @@ use yii2rails\app\domain\helpers\Config;
 use yii2rails\app\domain\helpers\Load;
 use yii2rails\extension\develop\helpers\Benchmark;
 use yii2rails\extension\scenario\helpers\ScenarioHelper;
+use yii2rails\app\domain\helpers\phar\PharCacheHelper;
 
 class App
 {
@@ -78,6 +79,7 @@ class App
 		Benchmark::end('run_env_commands_' . __METHOD__);
 		
 		self::$initedAs = $appName;
+        PharCacheHelper::registerSaveDeclaredClasses();
 	}
 
 	public static function initPhpApplication($appName = 'default', $config = null) {
