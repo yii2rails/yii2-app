@@ -9,11 +9,15 @@ use yii\helpers\ArrayHelper;
 use yii2lab\db\domain\helpers\TableHelper;
 use yii2rails\app\domain\helpers\EnvService;
 use yii2rails\domain\helpers\DomainHelper;
+use yii2rails\extension\console\handlers\RenderHahdler;
+use yii2rails\extension\console\helpers\Output;
 use yii2rails\extension\yii\helpers\FileHelper;
 
 class PharCacheHelper {
 
     private static $phar = null;
+    private static $render = null;
+    private static $renderClass = null;
 
     public static function allCommon() {
         $maxCount = self::max();
@@ -158,10 +162,14 @@ LIMIT 1
     }*/
 
 	public static function addFile(string $filePath, string $content) {
+	    if(self::getRenderInstance()) {
+            self::getRenderInstance()->line($filePath);
+        }
 	    //prr($filePath);
         $phar = self::getInstance();
         //$phar->offsetExists($filePath);
         if(!isset($phar[$filePath])) {
+            $phar->addFromString($filePath, $content);
             $phar[$filePath] = $content;
         }
 	}
@@ -172,6 +180,10 @@ LIMIT 1
         return $isExists;
     }
 
+    public static function setRendeClass($renderClass) {
+        self::$renderClass = $renderClass;
+    }
+
     private static function getParents(string $cl, array $new) {
         $parent = get_parent_class($cl);
         if($parent) {
@@ -180,6 +192,13 @@ LIMIT 1
         }
         $new[$cl] = $cl;
         return $new;
+    }
+
+    private static function getRenderInstance() {
+        if(self::$render === null && self::$renderClass) {
+            self::$render = \Yii::createObject(self::$renderClass);
+        }
+        return self::$render;
     }
 
     private static function getInstance() : Phar {

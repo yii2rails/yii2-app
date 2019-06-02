@@ -7,10 +7,10 @@ spl_autoload_register(function ($class) {
         $path = 'yii/Yii';
     }*/
     $fileName = 'phar://../../' . PHAR_FILE . SL . $path . '.php';
-    /*if(!file_exists($fileName)) {
+    $result = @include($fileName);
+    /*if(!class_exists($class)) {
         \yii2rails\app\domain\helpers\phar\PharCacheHelper::addClass($class);
     }*/
-    $result = @include($fileName);
     return $result;
 });
 
