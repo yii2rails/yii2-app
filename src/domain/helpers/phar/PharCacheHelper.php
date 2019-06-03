@@ -116,6 +116,46 @@ LIMIT 1
         return $new;
     }
 
+    public static function getStubTemplate() {
+        $stubCode = file_get_contents(__DIR__ . DS . 'stub_template.php');
+        return $stubCode;
+    }
+
+    public static function createInstance(string $outputFileName) : Phar {
+        FileHelper::createDirectory(FileHelper::up($outputFileName));
+        $basePharName = basename($outputFileName);
+        $phar = new Phar(
+            $outputFileName,
+            null,
+            $basePharName
+        );
+        return $phar;
+    }
+
+    public static function packDirectory(string $baseDir, string $outputFileName, $stubCode = null) : Phar {
+        FileHelper::createDirectory(FileHelper::up($outputFileName));
+        $basePharName = basename($outputFileName);
+        //d($basePharName);
+        $phar = new Phar(
+            $outputFileName,
+            null,
+            $basePharName
+        );
+        //$stubCode = file_get_contents(__DIR__ . DS . 'stub.php');
+        if($stubCode) {
+            $phar->setStub($stubCode);
+        }
+
+        //$phar->addFile('README.md', '1234');
+        //'#vendor(.+)#i'
+        $phar->buildFromDirectory($baseDir);
+
+        return $phar;
+        /*foreach (self::yiiRootClasses() as $yiiRootClass => $yiiRootPath) {
+            $phar->addFile(ROOT_DIR . SL . 'vendor/' . $yiiRootPath . '.php', 'vendor/' . $yiiRootPath . '.php');
+        }*/
+    }
+
     public static function addClassListWithParents(array $classNameList) {
         $classNameList = array_unique($classNameList);
         $all = array_combine($classNameList, $classNameList);
@@ -127,6 +167,7 @@ LIMIT 1
         return [
             'yii/Yii' => 'yiisoft/yii2/Yii',
             'yii/classes' => 'yiisoft/yii2/classes',
+            'yii2rails/app/App' => 'yii2rails/yii2-app/src/App',
         ];
     }
 
@@ -204,6 +245,7 @@ LIMIT 1
     private static function getInstance() : Phar {
         if(self::$phar === null) {
             $pharFileName = ROOT_DIR . DS . PHAR_FILE;
+            FileHelper::createDirectory(FileHelper::up($pharFileName));
             $isExists = self::has();
             self::$phar = new \Phar($pharFileName);
             if(!$isExists) {
