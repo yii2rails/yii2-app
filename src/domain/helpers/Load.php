@@ -5,7 +5,8 @@ namespace yii2rails\app\domain\helpers;
 class Load
 {
 
-	const YII_CLASS = VENDOR_DIR . DS . 'yiisoft' . DS . 'yii2' . DS . 'Yii.php';
+    const ROOT = __DIR__ . '/../../../../../..';
+	const YII_CLASS = self::ROOT . DS . 'vendor' . DS . 'yiisoft' . DS . 'yii2' . DS . 'Yii.php';
 	
 	public static function autoload()
 	{
