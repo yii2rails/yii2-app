@@ -54,7 +54,7 @@ class App
 		Load::autoload();
 		//Load::helpers();
 		Constant::init($appName);
-		//CodeCacheHelper::loadClassesCache();
+		\yii2rails\extension\code\helpers\CodeCacheHelper::loadClassesCache();
 		
 		Benchmark::begin('pre_init_yii_' . __METHOD__);
 		Env::init($projectDir);
