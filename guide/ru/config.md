@@ -129,7 +129,7 @@ return [
 				'withLocal' => false,
 			],
 			'yii2rails\app\domain\filters\config\StandardConfigMutations',
-			'yii2module\offline\domain\filters\IsOffline',
+			'yii2tool\offline\domain\filters\IsOffline',
 			
 			[
 				'class' => 'yii2lab\migration\domain\filters\SetPath',

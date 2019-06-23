@@ -90,7 +90,7 @@ LIMIT 1
         }
         register_shutdown_function(function() {
             DomainHelper::defineDomains([
-                'tool' => 'yii2module\tool\domain\Domain',
+                'tool' => 'yii2tool\tool\domain\Domain',
             ]);
             if(strpos($_SERVER['REQUEST_URI'], '/debug/') !== 0) {
                 $classes = \yii2rails\extension\code\helpers\ClassDeclaredHelper::allUserClasses();

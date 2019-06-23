@@ -2,7 +2,7 @@
 
 return [
 	[
-		'class' => 'yii2lab\init\domain\filters\input\Custom',
+		'class' => 'yii2tool\init\domain\filters\input\Custom',
 		'title' => 'Domain',
 		'segment' => 'domain',
 		'value' => [
@@ -13,7 +13,7 @@ return [
 		],
 	],
 	[
-		'class' => 'yii2lab\init\domain\filters\input\Custom',
+		'class' => 'yii2tool\init\domain\filters\input\Custom',
 		'title' => 'Encrypt',
 		'segment' => 'encrypt',
 		'value' => [
@@ -26,7 +26,7 @@ return [
 		],
 	],
 	[
-		'class' => 'yii2lab\init\domain\filters\input\CookieValidationKey',
+		'class' => 'yii2tool\init\domain\filters\input\CookieValidationKey',
 		'length' => 32,
 		'apps' => [
 			'frontend',
@@ -34,13 +34,13 @@ return [
 		],
 	],
 	[
-		'class' => 'yii2lab\init\domain\filters\store\Copy',
+		'class' => 'yii2tool\init\domain\filters\store\Copy',
 		'paths' => [
 			'environments/files',
 		],
 	],
 	[
-		'class' => 'yii2lab\init\domain\filters\store\SetWritable',
+		'class' => 'yii2tool\init\domain\filters\store\SetWritable',
 		'target' => [
 			'frontend',
 			'backend',
@@ -61,13 +61,13 @@ return [
 		],
 	],
 	[
-		'class' => 'yii2lab\init\domain\filters\store\SetExecutable',
+		'class' => 'yii2tool\init\domain\filters\store\SetExecutable',
 		'paths' => [
 			'yii',
 			'yii_test',
 		],
 	],
 	[
-		'class' => 'yii2lab\init\domain\filters\store\EnvLocalConfig',
+		'class' => 'yii2tool\init\domain\filters\store\EnvLocalConfig',
 	],
 ];

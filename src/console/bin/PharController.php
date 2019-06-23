@@ -19,7 +19,7 @@ class PharController extends \yii\base\Component
 		parent::init();
 
         \yii2rails\domain\helpers\DomainHelper::defineDomains([
-            'tool' => 'yii2module\tool\domain\Domain',
+            'tool' => 'yii2tool\tool\domain\Domain',
         ]);
 
         Output::line();

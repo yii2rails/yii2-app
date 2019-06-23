@@ -41,7 +41,7 @@ return [
                 ],
             ],
             /*[
-                'class' => 'yii2module\offline\domain\filters\IsOffline',
+                'class' => 'yii2tool\offline\domain\filters\IsOffline',
                 'exclude' => [
                     CONSOLE,
                     BACKEND,

@@ -55,7 +55,7 @@ $config = [
 	'title' => 'Develop',
 	'filters' => [
 		[
-			'class' => 'yii2lab\init\domain\filters\input\Custom',
+			'class' => 'yii2tool\init\domain\filters\input\Custom',
 			'title' => 'Custom env config',
 			'segment' => null,
 			'value' => [
