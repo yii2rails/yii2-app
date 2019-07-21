@@ -257,3 +257,11 @@ return [
 
 ];
 ```
+
+## Конфигурация алиасов для autoload
+
+```php
+'aliases' => PackageHelper::generateAliases([
+    'yii2bundle/i18n',
+]),
+```
