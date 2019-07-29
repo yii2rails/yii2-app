@@ -17,8 +17,8 @@ function param($name, $default = null) {
 	return Env::get('params' . DOT . $name, $default);
 }
 
-function d($val) {
-    Debug::prr($val, 1, 1);
+function d($val, $exit = 1) {
+    Debug::prr($val, $exit, 1);
 }
 
 function prr($val, $exit = false, $forceToArray = false) {
