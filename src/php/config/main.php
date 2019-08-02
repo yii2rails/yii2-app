@@ -6,17 +6,17 @@ return [
     'enableCoreCommands'  => false,
     'controllerNamespace' => 'yii\\apidoc\\commands',
     'components' => [
-        'language' => 'yii2module\lang\domain\components\Language',
+        'language' => 'yii2bundle\lang\domain\components\Language',
         'user' => [
             'class' => 'yii2module\account\domain\v3\web\User',
         ],
-        'authManager' => 'yii2lab\rbac\domain\rbac\PhpManager',
+        'authManager' => 'yii2bundle\rbac\domain\rbac\PhpManager',
         'cache' => [
             'class' => 'yii\caching\FileCache',
             'cachePath' => '@common/runtime/cache',
         ],
         'i18n' => [
-            'class' => 'yii2module\lang\domain\i18n\I18N',
+            'class' => 'yii2bundle\lang\domain\i18n\I18N',
             'aliases' => [
                 '*' => '@common/messages',
             ],
