@@ -2,7 +2,7 @@
 
 namespace tests\unit\helpers;
 
-use yii2lab\test\Test\Unit;
+use yii2tool\test\Test\Unit;
 
 class PhpTest extends Unit
 {

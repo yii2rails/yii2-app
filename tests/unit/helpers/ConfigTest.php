@@ -2,11 +2,11 @@
 
 namespace tests\unit\helpers;
 
-use yii2lab\test\Test\Unit;
+use yii2tool\test\Test\Unit;
 use yii\helpers\ArrayHelper;
 use yii2rails\app\domain\helpers\Config;
 use yii2rails\app\domain\helpers\Env;
-use yii2lab\test\helpers\DataHelper;
+use yii2tool\test\helpers\DataHelper;
 
 class ConfigTest extends Unit
 {
