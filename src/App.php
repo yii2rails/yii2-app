@@ -13,6 +13,7 @@ use yii2rails\app\domain\helpers\Load;
 use yii2rails\extension\develop\helpers\Benchmark;
 use yii2rails\extension\scenario\helpers\ScenarioHelper;
 use yii2rails\app\domain\helpers\phar\PharCacheHelper;
+use PhpLab\Core\Libs\Env\DotEnvHelper;
 
 class App
 {
@@ -52,9 +53,10 @@ class App
 		define('MICRO_TIME', microtime(true));
 		require_once(__DIR__ . '/domain/helpers/Load.php');
 		Load::autoload();
-		//Load::helpers();
+        DotEnvHelper::init();
+        //Load::helpers();
 		Constant::init($appName);
-		\yii2rails\extension\code\helpers\CodeCacheHelper::loadClassesCache();
+		//\yii2rails\extension\code\helpers\CodeCacheHelper::loadClassesCache();
 		
 		Benchmark::begin('pre_init_yii_' . __METHOD__);
 		Env::init($projectDir);
