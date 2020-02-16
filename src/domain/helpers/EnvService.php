@@ -34,7 +34,7 @@ class EnvService {
 
 	public static function getUrl($name, $uri = null) {
         $name = strtoupper($name);
-        $domain = $_ENV["{$name}_DOMAIN_URL"];
+        $domain = $_ENV["{$name}_URL"];
 		//$domain = self::get('url' . DOT . $name);
 		return self::generateUrl($domain, $uri);
 	}
@@ -48,7 +48,7 @@ class EnvService {
 	}
 
     private static function getStaticHost() {
-        $domain = $_ENV["STATIC_DOMAIN_URL"];
+        $domain = $_ENV["STATIC_URL"];
         //$domain = self::getServer('static.domain');
         $domain = trim($domain, SL);
         return $domain;
